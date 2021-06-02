@@ -1,24 +1,63 @@
 // Iteration #1: Find the maximum
-function maxOfTwoNumbers(num1,num2) {}
+function maxOfTwoNumbers(num1,num2) {
+  if (num1>num2)
+  { 
+    return num1;
+  }
+  else
+  {
+    return num2;
+  }
+
+}
 
 
 
 // Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
+//Implement the function `findLongestWord` that takes as an argument an array of words and returns the longest one. If there are 2 with the same length, it should return the first occurrence.
 
-function findLongestWord() {}
+function findLongestWord(words) {
+for (let i=0; i < words.length;i++) //for loop find the longest
+  if( words[i].length > ) // if to check the length is greater than ! < smaller than last 
+  {
+
+   return
+  }
+  else if ()
+  {
+  }
+// if 
+}
 
 
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+//Calculating a sum can be as simple as iterating over an array and adding each of the elements together. Implement the function named `sumNumbers` that takes an array of numbers as an argument, and returns the sum of all of the numbers in the array. Later in the course we will learn how to do this by using the `reduce` array method, which will make your work significantly easier. For now, let's practice _"declarative"_ way adding values, using loops.
 
-function sumNumbers() {}
+function sumNumbers(numbersArr) {
+  let sum = 0;
+  let numbersArr = [];
+  
+  for (let i=0; i < numbersArr.length; i++ )  { // for loop to go through the array
+    
+  sum +=  numbersArr[i];
+  //new variable to add to the sum
+    
+  }
+  console.log(sum); 
+  return sum; // not inside the loop 
+  
+} 
+//sumNumbers(numbers) ==> invokes/calls the function 
 
 
 
 // Iteration #3.1 Bonus:
-function sum() {}
+function sum() {
+// no time  will go back to this when done
+}
 
 
 
@@ -26,13 +65,37 @@ function sum() {}
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+function averageNumbers(numbersArr) {
+  let sum = 0;
+  let numbersArr=[]; // some array of numbers
+  let divideBy = numbersArr.length; // self explanitory
+  let average; //
+  
+  for (let i=0; i < numbersArr.length; i++ )  { // for loop to go through the array
+    
+  sum +=  numbersArr[i]; //new array storage???
+  average = sum/divideBy;
+  //new variables to add to the sum and get average
+    
+  }
+  console.log(average);
+  return average;  
+}
 
+//averageNumbers(numbersAvg) ==> invokes/calls the function 
+//nothing seems to work  :-( *sad and confused*
 
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
-function averageWordLength() { }
+function averageWordLength() { 
+ // need a for loop to go through the array 
+ 
+// for loop to get the length for each element and add it to a new variable 
+
+//and divide by length of the array 
+
+}
 
 // Bonus - Iteration #4.1
 function avg() {}
@@ -52,8 +115,20 @@ const wordsUnique = [
   'bring'
 ];
 
-function uniquifyArray() {}
+function uniquifyArray(someArr) { // takes in your array
+  let someArr=[];
+  let uniqueArr=[]; 
 
+  for (let i=0; i<someArr.length; i++){ //for loop to check uniqueness of each 
+    if (! uniqueArr.includes(someArr[i])){   // compares  confused  if not included in the array
+
+      uniqueArr.push(someArr[i]); //adds the unique value to the new array
+    }
+     // prints out the array
+  }
+  return uniqueArr;
+}
+// uniquifyArray(wordsUnique) ==> invokes/calls the function 
 
 
 // Iteration #6: Find elements
@@ -78,7 +153,10 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes() {}
+function howManyTimes() {
+
+
+}
 
 
 
