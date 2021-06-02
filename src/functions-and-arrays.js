@@ -18,16 +18,20 @@ const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard',
 //Implement the function `findLongestWord` that takes as an argument an array of words and returns the longest one. If there are 2 with the same length, it should return the first occurrence.
 
 function findLongestWord(words) {
-for (let i=0; i < words.length;i++) //for loop find the longest
-  if( words[i].length > ) // if to check the length is greater than ! < smaller than last 
-  {
+  let longestWord = ""; //  need to give it a value 
+ 
+for (let i=0; i < words.length;i++) //for loop find the longest 
+  if( words[i].length > longestWord) // if to check the length is greater than ! < smaller than last 
+  {  //words[i]  gets each ealement of the array 
+    longestWord = words[i] //  updates the  longest word variable  
+  }
+  return longestWord;
 
-   return
-  }
-  else if ()
+  if (words[i].length==0) // Also if its empty arr give null 
   {
+    return null;
   }
-// if 
+
 }
 
 
@@ -46,9 +50,13 @@ function sumNumbers(numbersArr) {
   //new variable to add to the sum
     
   }
-  console.log(sum); 
-  return sum; // not inside the loop 
   
+  return sum; // not inside the loop 
+  if (numbersArr.length==0) // Also if its empty arr give null 
+  {
+    return null;
+  }
+
 } 
 //sumNumbers(numbers) ==> invokes/calls the function 
 
